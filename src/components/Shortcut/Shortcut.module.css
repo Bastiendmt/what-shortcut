@@ -1,0 +1,23 @@
+.Row {
+  display: flex;
+  background-color: #353535;
+  margin: 20px;
+}
+
+.Name,
+.Keybindings,
+.Description {
+  padding: 30px;
+}
+
+.Name {
+  flex: 2 1;
+}
+
+.Keybindings {
+  flex: 1 1;
+}
+
+.Description {
+  flex: 5 1;
+}

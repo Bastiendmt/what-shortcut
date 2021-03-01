@@ -1,0 +1,9 @@
+.key {
+    margin: 0 5px;
+    padding: 3px 5px;
+
+    border-radius: 25%;
+    border : 1px solid #656565;
+
+    font-size: 0.9rem;
+}

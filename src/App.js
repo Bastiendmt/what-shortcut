@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
+import Shortcut from './components/Shortcut/Shortcut';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className={styles.Container}>
+      <header className={styles.Title}>
+        <h1>What shortcut ?</h1>
       </header>
+      
+      <div className={styles.Header}>
+        <div className={styles.Name}>Name</div>
+        <div className={styles.KeyBinding}>Key binding</div>
+        <div className={styles.Description}>Description</div>
+      </div>
+
+      <div className={styles.ShortcutContainer}>
+        <Shortcut></Shortcut>
+      </div>
     </div>
   );
 }
